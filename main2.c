@@ -1,5 +1,5 @@
 /*
- * Comments goes here
+ * This code calculates PI to 10^-6 error using BBP series by increments of 1.
  */
 #include <stdio.h>
 #include <math.h>
