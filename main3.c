@@ -1,5 +1,5 @@
 /*
- * Comments goes here
+ * This code times the two codes that calculate PI to 10^-6 error using leibniz and BBP series.
  */
 #include <stdio.h>
 #include <math.h>
