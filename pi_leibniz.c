@@ -1,6 +1,6 @@
 /*
- * Comment goes here
- *
+* This function will calculate n number of Leibniz values.
+ * n is defined in the line that calls this function.
  */
 
 double pi_leibniz (int n)
