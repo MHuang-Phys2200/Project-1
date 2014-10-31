@@ -1,6 +1,6 @@
 /*
- * Comment goes here
- *
+ * This function will calculate n number of Bailey–Borwein–Plouffe values.
+ * n is defined in the line that calls this function.
  */
 
 double pi_bbp (int n)
