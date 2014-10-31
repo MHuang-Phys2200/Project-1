@@ -1,5 +1,5 @@
 /*
- * Comments goes here
+ * This code calculates PI to 10^-6 error by increments of 100000 using Leibniz series.
  */
 #include <stdio.h>
 #include <math.h>
