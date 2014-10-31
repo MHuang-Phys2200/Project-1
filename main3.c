@@ -25,11 +25,12 @@ int main(void)
 		time_bbp += timebbp();
 		count_bbp += 1;
 	}
-    double t2 = time_bbp / count_bbp;
+    	double t2 = time_bbp / count_bbp;
     
-    printf("%f %f %f %f %f %f", count_leibniz, time_leibniz, t1, count_bbp, time_bbp, t2);
-    printf("\n"); 
-    printf("Leibniz/BBP %21.0f \n", t1/t2); 
+    	printf("Leinbniz count: %f Leibniz time: %f Leibniz avg time: %f\n", count_leibniz, time_leibniz, t1);
+    	printf("BBP count: %f BBP time: %f BBP avg time: %f\n", count_bbp, time_bbp, t2)
+    	printf("\n"); 
+    	printf("Leibniz/BBP %21.0f \n", t1/t2); 
 
     return 0;
 }
@@ -48,13 +49,13 @@ double timeleibniz()
 	{
 		if (fabs(pi - M_PI) < pow(10, -6))
 		{
-    		end = clock();
-    	}
-    	else
-    	{
-    		pi = pi_leibniz(i);
+    			end = clock();
+    		}
+    		else
+	    	{
+			pi = pi_leibniz(i);
 		}
-    }
+    	}
 	
 	time_spent = (double)(end - begin) / CLOCKS_PER_SEC;
 	return time_spent;
@@ -74,13 +75,13 @@ double timebbp()
 	{
 		if (fabs(pi - M_PI) < pow(10, -6))
 		{
-    		end = clock();
-    	}
-    	else
-    	{
-    		pi = pi_bbp(i);
+    			end = clock();
+    		}
+    		else
+    		{
+    			pi = pi_bbp(i);
 		}
-    }
+    	}
     	
 
 	time_spent = (double)(end - begin) / CLOCKS_PER_SEC;
